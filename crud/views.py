@@ -5,7 +5,7 @@ from django.contrib import messages
 
 def index(request):
     data=Employe.objects.all()
-    print(data)
+    # print(data)
     context={"data":data}
     return render(request,"index.html",context)
 
